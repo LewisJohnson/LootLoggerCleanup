@@ -6,16 +6,24 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <Description>Cleans up OSRS Runelite loot logger (e.g. Drops for Leagues)</Description>
+    <Authors>Lewis Johnson</Authors>
+    <PackageProjectUrl>https://github.com/LewisJohnson/LootLoggerCleanup</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/LewisJohnson/LootLoggerCleanup</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Update="CleanupForm.resx">
       <Generator></Generator>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Properties\DataSources\" />
   </ItemGroup>
 
 </Project>
